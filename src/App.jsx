@@ -10,6 +10,7 @@ import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import VideoModal from './components/VideoModal'
+import CustomCursor from './components/CustomCursor'
 import { personalInfo } from './data/portfolio-data'
 
 import './styles/components/navbar.css'
@@ -23,6 +24,7 @@ import './styles/components/education.css'
 import './styles/components/certificates.css'
 import './styles/components/contact.css'
 import './styles/components/footer.css'
+import './styles/components/custom-cursor.css'
 
 export default function App() {
   const [modalOpen, setModalOpen] = useState(false)
@@ -30,6 +32,7 @@ export default function App() {
   return (
     <div className="app-root">
       <div className="grain-overlay"></div>
+      <CustomCursor />
       
       <Navbar />
       <Hero onPlayReel={() => setModalOpen(true)} />
@@ -50,3 +53,4 @@ export default function App() {
     </div>
   )
 }
+

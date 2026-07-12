@@ -1,0 +1,55 @@
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: width 0.3s, height 0.3s, background-color 0.3s, border-color 0.3s;
+  transition-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
+  mix-blend-mode: difference;
+}
+
+.custom-cursor-dot {
+  width: 4px;
+  height: 4px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s;
+}
+
+/* Hover States */
+.custom-cursor.hovered {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 59, 48, 0.1);
+  border-color: var(--primary-light);
+}
+
+.custom-cursor-dot.hovered {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+/* Hide default cursor on screens larger than mobile */
+@media (min-width: 769px) {
+  body {
+    cursor: none;
+  }
+  
+  a, button, .btn, .play-reel-btn, .skills-filter-btn {
+    cursor: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-cursor,
+  .custom-cursor-dot {
+    display: none;
+  }
+}

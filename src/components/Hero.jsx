@@ -1,8 +1,36 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import { personalInfo } from '../data/portfolio-data'
 import '../styles/components/hero.css'
 
 export default function Hero({ onPlayReel }) {
+  const [tiltStyle, setTiltStyle] = useState({})
+  const visualRef = useRef(null)
+
+  const handleMouseMove = (e) => {
+    const card = visualRef.current
+    if (!card) return
+
+    const rect = card.getBoundingClientRect()
+    const x = e.clientX - rect.left - rect.width / 2
+    const y = e.clientY - rect.top - rect.height / 2
+    
+    // Calculate rotation angles (max 15 degrees)
+    const rotateX = -(y / (rect.height / 2)) * 15
+    const rotateY = (x / (rect.width / 2)) * 15
+
+    setTiltStyle({
+      transform: `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`,
+      transition: 'transform 0.1s ease-out'
+    })
+  }
+
+  const handleMouseLeave = () => {
+    setTiltStyle({
+      transform: 'perspective(1000px) rotateX(0deg) rotateY(0deg)',
+      transition: 'transform 0.5s ease-out'
+    })
+  }
+
   const handleScrollToContact = (e) => {
     e.preventDefault()
     const target = document.querySelector('#contact')
@@ -17,6 +45,9 @@ export default function Hero({ onPlayReel }) {
 
   return (
     <section id="home" className="hero">
+      {/* Dynamic Background Grid Pattern */}
+      <div className="hero-grid-bg"></div>
+
       <div className="container">
         <div className="hero-content">
           <span className="hero-subtitle">Welcome to my universe</span>
@@ -55,7 +86,13 @@ export default function Hero({ onPlayReel }) {
           </div>
         </div>
 
-        <div className="hero-visual">
+        <div 
+          className="hero-visual" 
+          ref={visualRef}
+          onMouseMove={handleMouseMove}
+          onMouseLeave={handleMouseLeave}
+          style={tiltStyle}
+        >
           <div className="glow-ring glow-ring-1"></div>
           <div className="glow-ring glow-ring-2"></div>
           
