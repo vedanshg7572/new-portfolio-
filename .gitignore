@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Temporary frames extracted from video
+public/assets/frames/
+public/assets/reel_frames/
+scratch/
+
