@@ -45,11 +45,31 @@ export const skills = [
 
 export const projects = [
   {
+    title: "AuraCloud Chatbot",
+    description:
+      "An AI-powered chatbot widget integrated with a SaaS landing page and telemetry dashboard. Supports rule-based NLP intent scoring (Jaccard similarity, stop-word filter) and Google Gemini generative fallbacks.",
+    tech: ["JavaScript", "Gemini API", "CSS Grid", "HTML5"],
+    github: "https://github.com/vedanshg7572/CodeAlpha_chatbot",
+    live: null,
+    icon: "🤖",
+    color: "#FF3B30",
+  },
+  {
+    title: "Cloud-Based Bus Pass System",
+    description:
+      "Full-stack transit ticketing platform built with the MERN stack. Features JWT authentication, secure backend fare calculations, signed boarding QR verification codes, and Cloudinary storage.",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+    github: "https://github.com/vedanshg7572/CodeAlpha_cloudbus-pass",
+    live: null,
+    icon: "🚌",
+    color: "#0ae",
+  },
+  {
     title: "Quantum Hands",
     description:
       "A WebGL-powered hand-tracking experience using MediaPipe. Features real-time gesture recognition (peace, fist, pinch, thumbs up), multiple color themes, persistent draw mode, and cinematic glitch effects — all running in the browser with zero backend.",
     tech: ["JavaScript", "MediaPipe", "WebGL", "Canvas API"],
-    github: "https://github.com/vedanshg7572",
+    github: "https://github.com/vedanshg7572/ved-quantum-hands-",
     live: null,
     icon: "🖐️",
     color: "#6c9",
@@ -59,7 +79,7 @@ export const projects = [
     description:
       "Full-stack library management application with a Vite-powered React frontend and a dedicated backend. Features book cataloging, user management, and seamless CRUD operations. Deployed on Vercel.",
     tech: ["React", "Vite", "Node.js", "Vercel"],
-    github: "https://github.com/vedanshg7572",
+    github: "https://github.com/vedanshg7572/library-management-system",
     live: null,
     icon: "📚",
     color: "#7df",
@@ -69,7 +89,7 @@ export const projects = [
     description:
       "Hosted a static website using Amazon S3 with properly configured bucket permissions and static website hosting settings. Demonstrated cloud deployment skills and AWS fundamentals.",
     tech: ["AWS S3", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/vedanshg7572",
+    github: "https://github.com/vedanshg7572/aws-photo-gallery",
     live: null,
     icon: "☁️",
     color: "#f80",
@@ -79,7 +99,7 @@ export const projects = [
     description:
       "Classic Snake game built with HTML5 Canvas. Features smooth gameplay, score tracking, and responsive controls. A fun project showcasing JavaScript DOM manipulation and game loop fundamentals.",
     tech: ["HTML5", "CSS3", "JavaScript", "Canvas API"],
-    github: "https://github.com/vedanshg7572",
+    github: "https://github.com/vedanshg7572/snake-game",
     live: null,
     icon: "🐍",
     color: "#0ae",
@@ -97,6 +117,16 @@ export const projects = [
 ];
 
 export const certificates = [
+  {
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "AWS Training & Certification",
+    date: "July 13, 2026",
+    hours: "Completion Certificate",
+    credlyLink: "https://www.aws.training/",
+    pdfPath: "/assets/aws-practitioner-certificate.pdf",
+    icon: "☁️",
+    color: "#FF9900",
+  },
   {
     title: "AWS Academy Graduate — Cloud Foundations",
     issuer: "AWS Academy / Credly",
