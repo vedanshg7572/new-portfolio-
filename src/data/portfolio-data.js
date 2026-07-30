@@ -118,6 +118,26 @@ export const projects = [
 
 export const certificates = [
   {
+    title: "Cloud Computing Intern",
+    issuer: "Codec Technologies Pvt. Ltd. (AICTE Approved)",
+    date: "July 2026 — Sept 2026",
+    hours: "1 Month Internship",
+    credlyLink: "https://internship.aicte-india.org/",
+    pdfPath: "/assets/codec-internship-certificate.pdf",
+    icon: "⚡",
+    color: "#4285F4",
+  },
+  {
+    title: "Essentials: Your First Workflows",
+    issuer: "n8n academy",
+    date: "July 25, 2026",
+    hours: "Workflow Automation",
+    credlyLink: "https://academy.n8n.io/",
+    pdfPath: "/assets/n8n-workflows-certificate.pdf",
+    icon: "🔄",
+    color: "#EA4B71",
+  },
+  {
     title: "AWS Cloud Practitioner Essentials",
     issuer: "AWS Training & Certification",
     date: "July 13, 2026",

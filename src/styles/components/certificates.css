@@ -1,8 +1,9 @@
 /* Certifications design */
 .certs-grid {
-  display: flex;
-  justify-content: center;
-  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
