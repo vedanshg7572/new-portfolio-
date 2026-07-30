@@ -45,10 +45,10 @@ export const skills = [
 
 export const projects = [
   {
-    title: "AuraCloud Chatbot",
+    title: "AuraCloud AI Chatbot",
     description:
-      "An AI-powered chatbot widget integrated with a SaaS landing page and telemetry dashboard. Supports rule-based NLP intent scoring (Jaccard similarity, stop-word filter) and Google Gemini generative fallbacks.",
-    tech: ["JavaScript", "Gemini API", "CSS Grid", "HTML5"],
+      "AI-powered chatbot widget & telemetry dashboard featuring hybrid Jaccard similarity intent matching, custom NLP tokenization, and Google Gemini LLM fallback for off-pattern queries.",
+    tech: ["JavaScript", "Google Gemini API", "NLP Engine", "CSS Grid", "HTML5"],
     github: "https://github.com/vedanshg7572/CodeAlpha_chatbot",
     live: null,
     icon: "🤖",
@@ -57,8 +57,8 @@ export const projects = [
   {
     title: "Cloud-Based Bus Pass System",
     description:
-      "Full-stack transit ticketing platform built with the MERN stack. Features JWT authentication, secure backend fare calculations, signed boarding QR verification codes, and Cloudinary storage.",
-    tech: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+      "Production-ready MERN transit ticketing platform with HMAC-signed QR verification, in-memory PDF pass rendering (PDFKit), Cloudinary document storage, and RBAC authentication.",
+    tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS", "JWT"],
     github: "https://github.com/vedanshg7572/CodeAlpha_cloudbus-pass",
     live: null,
     icon: "🚌",
@@ -67,52 +67,22 @@ export const projects = [
   {
     title: "Quantum Hands",
     description:
-      "A WebGL-powered hand-tracking experience using MediaPipe. Features real-time gesture recognition (peace, fist, pinch, thumbs up), multiple color themes, persistent draw mode, and cinematic glitch effects — all running in the browser with zero backend.",
-    tech: ["JavaScript", "MediaPipe", "WebGL", "Canvas API"],
+      "High-performance hand-tracking web application powered by MediaPipe & WebGL. Features real-time gesture recognition (peace, pinch, fist), custom draw canvas, and shader effects.",
+    tech: ["JavaScript", "MediaPipe AI", "WebGL", "Canvas API"],
     github: "https://github.com/vedanshg7572/ved-quantum-hands-",
     live: null,
     icon: "🖐️",
     color: "#6c9",
   },
   {
-    title: "Library Management System",
+    title: "Full-Stack Library Management System",
     description:
-      "Full-stack library management application with a Vite-powered React frontend and a dedicated backend. Features book cataloging, user management, and seamless CRUD operations. Deployed on Vercel.",
-    tech: ["React", "Vite", "Node.js", "Vercel"],
+      "Decoupled library management platform featuring a Vite React client and REST API Express server. Manages book cataloging, user session permissions, and cloud deployment.",
+    tech: ["React.js", "Vite", "Node.js", "MongoDB", "Express", "Vercel"],
     github: "https://github.com/vedanshg7572/library-management-system",
     live: null,
     icon: "📚",
     color: "#7df",
-  },
-  {
-    title: "Static Website on AWS S3",
-    description:
-      "Hosted a static website using Amazon S3 with properly configured bucket permissions and static website hosting settings. Demonstrated cloud deployment skills and AWS fundamentals.",
-    tech: ["AWS S3", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/vedanshg7572/aws-photo-gallery",
-    live: null,
-    icon: "☁️",
-    color: "#f80",
-  },
-  {
-    title: "Snake Game",
-    description:
-      "Classic Snake game built with HTML5 Canvas. Features smooth gameplay, score tracking, and responsive controls. A fun project showcasing JavaScript DOM manipulation and game loop fundamentals.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Canvas API"],
-    github: "https://github.com/vedanshg7572/snake-game",
-    live: null,
-    icon: "🐍",
-    color: "#0ae",
-  },
-  {
-    title: "DSA Problem Solving",
-    description:
-      "Consistent practice on LeetCode solving problems on arrays, trees, and graphs. Implemented BFS and DFS traversal algorithms. Building strong algorithmic thinking and coding efficiency.",
-    tech: ["Java", "C++", "Algorithms", "Data Structures"],
-    github: "https://leetcode.com/u/Vedansh75/",
-    live: "https://leetcode.com/u/Vedansh75/",
-    icon: "🧠",
-    color: "#f2a",
   },
 ];
 
