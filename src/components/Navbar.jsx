@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { navLinks, personalInfo } from '../data/portfolio-data'
+import { soundFx } from '../utils/audio'
 import '../styles/components/navbar.css'
 
-export default function Navbar() {
+export default function Navbar({ onOpenCommandPalette }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileActive, setMobileActive] = useState(false)
+  const [soundActive, setSoundActive] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,7 +21,13 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const toggleSound = () => {
+    const active = soundFx.toggle()
+    setSoundActive(active)
+  }
+
   const handleLinkClick = (e, href) => {
+    soundFx.playClick()
     e.preventDefault()
     setMobileActive(false)
     const target = document.querySelector(href)
@@ -58,12 +66,32 @@ export default function Navbar() {
                   href={link.href} 
                   className="nav-link" 
                   onClick={(e) => handleLinkClick(e, link.href)}
+                  onMouseEnter={() => soundFx.playHover()}
                 >
                   {link.label}
                 </a>
               </li>
             ))}
           </ul>
+
+          <button 
+            className="btn btn-outline" 
+            onClick={toggleSound}
+            style={{ padding: '6px 10px', fontSize: '0.85rem', cursor: 'pointer' }}
+            title={soundActive ? 'Mute Sound FX' : 'Enable Cyber Sound FX'}
+          >
+            {soundActive ? '🔊' : '🔇'}
+          </button>
+
+          <button 
+            className="btn btn-outline" 
+            onClick={() => { setMobileActive(false); if (onOpenCommandPalette) onOpenCommandPalette(); }}
+            style={{ padding: '6px 14px', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}
+            title="Command Palette (Ctrl + K)"
+          >
+            <span>⌨️</span> <span style={{ opacity: 0.8 }}>Ctrl+K</span>
+          </button>
+
           <a 
             href={personalInfo.resumePdf} 
             download="Vedansh_Gupta_Resume.pdf" 

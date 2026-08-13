@@ -1,0 +1,98 @@
+/* Matrix Hacker Screen Overlay */
+.matrix-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  color: #00FF66;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+}
+
+.matrix-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.matrix-content {
+  position: relative;
+  z-index: 10;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.matrix-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #00FF66;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.matrix-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.matrix-close {
+  background: transparent;
+  border: 1px solid #00FF66;
+  color: #00FF66;
+  padding: 4px 12px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.matrix-close:hover {
+  background: #00FF66;
+  color: #000;
+}
+
+.matrix-output {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.matrix-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  border-top: 1px solid rgba(0, 255, 102, 0.3);
+  padding-top: 16px;
+}
+
+.matrix-prompt {
+  font-weight: bold;
+}
+
+.matrix-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00FF66;
+  font-family: inherit;
+  font-size: 1rem;
+}

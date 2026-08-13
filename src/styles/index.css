@@ -53,6 +53,34 @@
   --shadow-glow-strong: 0 0 60px var(--primary-glow-strong);
 }
 
+/* Theme Overrides */
+[data-theme="matrix"] {
+  --primary: #00FF66;
+  --primary-light: #33FF85;
+  --primary-dark: #00CC52;
+  --primary-glow: rgba(0, 255, 102, 0.3);
+  --primary-glow-strong: rgba(0, 255, 102, 0.6);
+  --border-accent: rgba(0, 255, 102, 0.3);
+}
+
+[data-theme="aws"] {
+  --primary: #FF9900;
+  --primary-light: #FFB333;
+  --primary-dark: #CC7A00;
+  --primary-glow: rgba(255, 153, 0, 0.3);
+  --primary-glow-strong: rgba(255, 153, 0, 0.6);
+  --border-accent: rgba(255, 153, 0, 0.3);
+}
+
+[data-theme="cyberblue"] {
+  --primary: #00E5FF;
+  --primary-light: #33EBFF;
+  --primary-dark: #00B7CC;
+  --primary-glow: rgba(0, 229, 255, 0.3);
+  --primary-glow-strong: rgba(0, 229, 255, 0.6);
+  --border-accent: rgba(0, 229, 255, 0.3);
+}
+
 /* ---------- Reset & Base ---------- */
 *,
 *::before,
