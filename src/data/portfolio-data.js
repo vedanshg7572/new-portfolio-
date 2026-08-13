@@ -13,6 +13,7 @@ export const personalInfo = {
     github: "https://github.com/vedanshg7572",
     linkedin: "https://www.linkedin.com/in/vedansh-gupta-94373a32a/",
     leetcode: "https://leetcode.com/u/Vedansh75/",
+    website: "https://vedansh.tech",
     email: "mailto:vedanshg7572@gmail.com",
   },
 };
@@ -23,7 +24,7 @@ export const education = [
     field: "Computer Science Engineering",
     institution: "GLA University, Mathura",
     duration: "2024 — 2028 (Expected)",
-    status: "Currently in 2nd Year",
+    status: "Currently in 3rd Year",
     icon: "🎓",
   },
 ];
@@ -38,12 +39,42 @@ export const skills = [
   { name: "Data Structures & Algorithms", level: 80, category: "Core CS" },
   { name: "DBMS", level: 70, category: "Core CS" },
   { name: "OOPs", level: 82, category: "Core CS" },
-  { name: "AWS Basics", level: 65, category: "Cloud & Tools" },
-  { name: "Git & GitHub", level: 78, category: "Cloud & Tools" },
-  { name: "LeetCode Problem Solving", level: 75, category: "Cloud & Tools" },
+  { name: "AWS & Cloud Computing", level: 85, category: "Cloud & Tools" },
+  { name: "Git & GitHub", level: 80, category: "Cloud & Tools" },
+  { name: "LeetCode Problem Solving", level: 80, category: "Cloud & Tools" },
 ];
 
 export const projects = [
+  {
+    title: "Cloud Disaster Recovery System",
+    description:
+      "Automated multi-region 'Warm Standby' AWS disaster recovery architecture (us-east-1 to us-west-2) featuring Route 53 health-check failovers, RDS cross-region replication, and automated ASG compute scaling.",
+    tech: ["AWS Route 53", "EC2", "RDS Replication", "Node.js", "Express.js", "Bash"],
+    github: "https://github.com/vedanshg7572/cloud-disaster-recovery",
+    live: null,
+    icon: "🌩️",
+    color: "#FF3B30",
+  },
+  {
+    title: "Cloud Cost Optimization Dashboard",
+    description:
+      "Real-time cloud analytics & waste detection platform integrated with AWS Cost Explorer SDK. Features 10+ resource optimization strategies, automated SNS budget threshold alerts, and PDF report exports.",
+    tech: ["React.js", "Vite", "Tailwind CSS", "Recharts", "Express.js", "AWS SDK"],
+    github: "https://github.com/vedanshg7572/Cloud-Cost-Optimization-Dashboard",
+    live: null,
+    icon: "☁️",
+    color: "#4285F4",
+  },
+  {
+    title: "The Server Commander",
+    description:
+      "Cloud IaaS automated deployment & management suite for AWS EC2 Linux instances. Automates Apache2 web server setups, security group configurations, firewall UFW rules, and deployment scripts.",
+    tech: ["AWS EC2", "Ubuntu Linux", "Apache2", "Bash", "SSH", "Firewall UFW"],
+    github: "https://github.com/vedanshg7572/the-server-commandar",
+    live: null,
+    icon: "⚙️",
+    color: "#E95420",
+  },
   {
     title: "AuraCloud AI Chatbot",
     description:
@@ -52,7 +83,7 @@ export const projects = [
     github: "https://github.com/vedanshg7572/CodeAlpha_chatbot",
     live: null,
     icon: "🤖",
-    color: "#FF3B30",
+    color: "#FF9900",
   },
   {
     title: "Cloud-Based Bus Pass System",
@@ -73,16 +104,6 @@ export const projects = [
     live: null,
     icon: "🖐️",
     color: "#6c9",
-  },
-  {
-    title: "Full-Stack Library Management System",
-    description:
-      "Decoupled library management platform featuring a Vite React client and REST API Express server. Manages book cataloging, user session permissions, and cloud deployment.",
-    tech: ["React.js", "Vite", "Node.js", "MongoDB", "Express", "Vercel"],
-    github: "https://github.com/vedanshg7572/library-management-system",
-    live: null,
-    icon: "📚",
-    color: "#7df",
   },
 ];
 

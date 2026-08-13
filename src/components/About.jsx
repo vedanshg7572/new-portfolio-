@@ -32,7 +32,7 @@ export default function About() {
                   <div className="about-stat-label">Projects Built</div>
                 </div>
                 <div className="about-stat-card glass-card">
-                  <div className="about-stat-num">2nd</div>
+                  <div className="about-stat-num">3rd</div>
                   <div className="about-stat-label">Year CSE Student</div>
                 </div>
                 <div className="about-stat-card glass-card">
