@@ -14,6 +14,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/vedansh-gupta-94373a32a/",
     leetcode: "https://leetcode.com/u/Vedansh75/",
     website: "https://vedansh.tech",
+    whatsapp: "https://wa.me/917572001500?text=Hi%20Vedansh,%20I%20saw%20your%20portfolio!",
     email: "mailto:vedanshg7572@gmail.com",
   },
 };
