@@ -42,8 +42,8 @@ export default function AiBot({ isOpen, onToggle }) {
       return `Vedansh is currently a 3rd Year B.Tech Computer Science & Engineering student at GLA University, Mathura (2024 — 2028 expected).`
     }
 
-    if (q.includes('certif') || q.includes('aws') || q.includes('n8n')) {
-      return `Vedansh holds top cloud credentials:\n1. AWS Cloud Practitioner Essentials (AWS Training & Certification)\n2. AWS Academy Graduate — Cloud Foundations (Credly badge)\n3. n8n Academy Essentials: Your First Workflows`
+    if (q.includes('certif') || q.includes('aws') || q.includes('n8n') || q.includes('oracle') || q.includes('hackerrank') || q.includes('tcs')) {
+      return `Vedansh holds top industry credentials:\n1. 🏆 HackerRank Software Engineer Intern Role Certificate (ID: 57CB089E132F)\n2. ⭕ Oracle Cloud Infrastructure Certified Foundations Associate (ID: 103535367OCI26FNDCFA)\n3. 🛡️ TCS iON & MPIT-CoE AI & Cybersecurity Awareness (Guinness World Record Initiative)\n4. ☁️ AWS Cloud Practitioner Essentials\n5. ☁️ AWS Academy Graduate — Cloud Foundations (Credly badge)\n6. 🔄 n8n Academy Essentials: Your First Workflows`
     }
 
     if (q.includes('contact') || q.includes('email') || q.includes('whatsapp') || q.includes('hire') || q.includes('reach')) {

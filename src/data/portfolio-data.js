@@ -110,6 +110,36 @@ export const projects = [
 
 export const certificates = [
   {
+    title: "Software Engineer Intern Role Certificate",
+    issuer: "HackerRank",
+    date: "Sept 07, 2026",
+    hours: "Passed Role Cert Test (ID: 57CB089E132F)",
+    credlyLink: "https://www.hackerrank.com/certificates/57cb089e132f",
+    pdfPath: "/assets/hackerrank-swe-intern.pdf",
+    icon: "🏆",
+    color: "#00EA64",
+  },
+  {
+    title: "Oracle Cloud Infrastructure Foundations Associate",
+    issuer: "Oracle University",
+    date: "Sept 08, 2026",
+    hours: "Oracle Certified (ID: 103535367OCI26FNDCFA)",
+    credlyLink: "https://education.oracle.com/",
+    pdfPath: "/assets/oracle-cloud-foundations.pdf",
+    icon: "⭕",
+    color: "#C7254E",
+  },
+  {
+    title: "AI & Cybersecurity Awareness",
+    issuer: "TCS iON & MPIT-CoE (Guinness World Record)",
+    date: "Sept 09, 2026",
+    hours: "AI for All Initiative (ID: 8770-33793357-1016)",
+    credlyLink: "https://learning.tcsion.in/",
+    pdfPath: "/assets/tcs-ion-ai-cybersecurity.pdf",
+    icon: "🛡️",
+    color: "#0088FF",
+  },
+  {
     title: "Cloud Computing Intern",
     issuer: "Codec Technologies Pvt. Ltd. (AICTE Approved)",
     date: "July 2026 — Sept 2026",
